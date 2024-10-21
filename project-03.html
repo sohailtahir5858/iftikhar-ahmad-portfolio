@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Muhammad Iftikhar</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevCard Bootstrap 5 Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="assets/plugins/tiny-slider/tiny-slider.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    <style>
+        .equal-image-size {
+            width: 100%;
+            height: 300px; /* Set equal height for both images */
+            object-fit: cover; /* Ensure images maintain aspect ratio */
+        }
+    </style>
+</head> 
+
+<body>
+    
+    <header class="header text-center">     
+        <div class="force-overflow">
+            <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Muhammad Iftikhar</a></h1>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark" >
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navigation" class="collapse navbar-collapse flex-column" >
+                    <div class="profile-section pt-3 pt-lg-0">
+                        <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >            
+                        
+                        <div class="bio mb-3">Hi, my name is Muhammad Iftikhar and I'm an Associate AI Engineer.</div>
+                        <ul class="social-list list-inline py-2 mx-auto">
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github-alt fa-fw"></i></a></li>
+                        </ul>
+                        <hr> 
+                    </div>
+                    
+                    <ul class="navbar-nav flex-column text-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><i class="fas fa-user fa-fw me-2"></i>About Me<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html"><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="my-2">
+                        <a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<div class="main-wrapper">
+    <section class="cta-section theme-bg-light py-5">
+        <div class="container single-col-max-width">
+            <h2 class="heading text-center">Face Swapping App Development</h2>
+            <div class="project-intro text-center">
+                <p class="mb-0 lead">
+                    This project focused on creating a mobile face-swapping application that allows users to swap their faces with celebrity templates stored in the app. The solution integrates AI-based face-swapping models with mobile and cloud technologies for seamless real-time interactions.
+                </p>
+            </div>
+        </div><!--//container-->
+    </section>
+    
+    <section class="project px-3 py-5 p-md-5">
+        <div class="container">
+            <div class="project-sections py-5">
+                <div class="project-section mb-5">
+                    <h3 class="project-section-title mb-3">Project Overview</h3>
+                    <p>
+                        The face-swapping app is a mobile application where users can upload their images and swap faces with predefined celebrity templates. The backend leverages pre-trained deepfake models (SimSwap) enhanced with Super-Resolution GAN (SRGAN) for better image quality. We optimized the solution by deploying it on AWS EC2 instances, with template images stored on AWS S3 and MongoDB for managing user data.
+                    </p>
+                </div><!--//project-section-->
+                
+                <div class="project-section mb-5">
+                    <h3 class="project-section-title">The Challenge</h3>
+                    <p>
+                        Ensuring high-quality face swaps while keeping processing time within a few seconds was a major challenge. The initial pre-trained models provided suboptimal results, requiring additional post-processing techniques. Another challenge was optimizing server costs, as the backend services ran 24/7, leading to significant expenses during the app's early stages when there were few active users.
+                    </p>
+                </div><!--//project-section-->
+                
+                <div class="project-section mb-5">
+                    <h3 class="project-section-title">The Approach & Solution</h3>
+                    <p>
+                        We improved the quality of face swaps by combining SimSwap with SRGAN for better visual fidelity. To optimize the backend cost, we transitioned from a 24/7 EC2 instance setup to an AWS Lambda-based solution using Docker containers. This shift reduced operational costs, as the Lambda function only runs when triggered by user requests. The images were stored in an AWS EFS, ensuring that the Lambda function could handle large files. The Docker image for the face-swapping model was hosted on AWS ECR, and we set up API Gateway for mobile app interactions.
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-12 col-lg-6 mb-5">
+                            <img class="img-fluid rounded equal-image-size" src="assets/images/project/project_faceswap_example.png" alt="Face Swapping Example">
+                        </div>
+                    </div>
+                    <p>
+                        By leveraging these cloud technologies, we significantly improved the app’s performance while minimizing operational costs. The mobile app now offers high-quality, real-time face swaps with minimal delay, providing users with a seamless experience.
+                    </p>
+                </div><!--//project-section-->
+            </div><!--//project-sections-->
+        </div>
+    </section>
+    
+    <footer class="footer text-center py-4">
+        <small class="copyright">All rights reserved &copy; 2024</small>
+    </footer>
+</div>
+
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/isotope.pkgd.min.js"></script> 
+    <script type="text/javascript" src="assets/js/isotope-custom.js"></script>
+    <script src="assets/plugins/js-cookie.min.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/demo/style-switcher.js"></script>     
+</body>
+</html>

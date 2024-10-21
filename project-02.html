@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Muhammad Iftikhar</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevCard Bootstrap 5 Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="assets/plugins/tiny-slider/tiny-slider.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    <style>
+        .equal-image-size {
+            width: 100%;
+            height: 300px; /* Set equal height for both images */
+            object-fit: cover; /* Ensure images maintain aspect ratio */
+        }
+    </style>
+</head> 
+
+<body>
+    
+    <header class="header text-center">     
+        <div class="force-overflow">
+            <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Muhammad Iftikhar</a></h1>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark" >
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navigation" class="collapse navbar-collapse flex-column" >
+                    <div class="profile-section pt-3 pt-lg-0">
+                        <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >            
+                        
+                        <div class="bio mb-3">Hi, my name is Muhammad Iftikhar and I'm an Associate AI Engineer.</div>
+                        <ul class="social-list list-inline py-2 mx-auto">
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github-alt fa-fw"></i></a></li>
+                        </ul>
+                        <hr> 
+                    </div>
+                    
+                    <ul class="navbar-nav flex-column text-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><i class="fas fa-user fa-fw me-2"></i>About Me<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html"><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="my-2">
+                        <a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<div class="main-wrapper">
+    <section class="cta-section theme-bg-light py-5">
+        <div class="container single-col-max-width">
+            <h2 class="heading text-center">S&P 500 Mini Future Contract Forecasting</h2>
+            <div class="project-intro text-center">
+                <p class="mb-0 lead">
+                    In this project, we focused on forecasting the S&P 500 Mini futures contract prices using advanced machine learning techniques. The data was sourced from the CME Group, containing detailed time series data such as ask and bid prices, alongside other key market features. We leveraged state-of-the-art transformer-based models to make accurate predictions across multiple time horizons. The model was trained on Google Cloud Platform (GCP), utilizing powerful GPUs to optimize training speed and performance.
+                </p>
+            </div>
+        </div><!--//container-->
+    </section>
+    
+    <section class="project px-3 py-5 p-md-5">
+        <div class="container">
+            <div class="project-sections py-5">
+                <div class="project-section mb-5">
+                    <h3 class="project-section-title mb-3">Project Overview</h3>
+                    <p>
+                        This project focused on forecasting the prices of S&P 500 Mini futures contracts using advanced machine learning techniques. The time series data included essential features like ask and bid prices. We utilized the Temporal Fusion Transformer (TFT) model to make accurate forecasts across different time horizons. Training was done on Google Cloud Platform (GCP), leveraging GPU power to speed up and optimize the model.
+                    </p>
+                </div><!--//project-section-->
+                
+                <div class="project-section mb-5">
+                    <h3 class="project-section-title">The Challenge</h3>
+                    <p>
+                        Forecasting market prices is always challenging due to the rapidly changing market conditions. Additionally, integrating the forecasting model with trading platforms like NinjaTrader posed difficulties due to compatibility issues, documentation gaps, and high transaction fees, which limited its usability.
+                    </p>
+                </div><!--//project-section-->
+                
+                <div class="project-section mb-5">
+                    <h3 class="project-section-title">The Approach & Solution</h3>
+                    <p>
+                        We utilized the Temporal Fusion Transformer (TFT) model to forecast S&P 500 Mini futures prices based on historical data from CME Group. The model's accuracy was evaluated using MAE, RMSE, MAPE, and SMAPE. Although we initially attempted integration with NinjaTrader, we switched to Ironbeam due to its better documentation and lower fees, which improved our trading infrastructure.
+                    </p>
+                    <div class="row mt-5">
+                        <!-- <div class="col-12 col-lg-6 mb-5">
+                            <img class="img-fluid rounded equal-image-size" src="assets/images/project/market-forecast-1.jpg" alt="Market Forecast Example">
+                        </div> -->
+                        <div class="col-12 col-lg-6 mb-5">
+                            <img class="img-fluid rounded equal-image-size" src="assets/images/project/project_02_architecture_digram.png" alt="Market Prediction Graph">
+                        </div>
+                    </div>
+                    <p>
+                        The model was successfully integrated with Ironbeam's API, resulting in faster and more accurate forecasts for trading decision support.
+                    </p>
+                </div><!--//project-section-->
+            </div><!--//project-sections-->
+        </div>
+    </section>
+    
+    <footer class="footer text-center py-4">
+        <small class="copyright">All rights reserved &copy; 2024</small>
+    </footer>
+</div>
+
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/isotope.pkgd.min.js"></script> 
+    <script type="text/javascript" src="assets/js/isotope-custom.js"></script>
+    <script src="assets/plugins/js-cookie.min.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/demo/style-switcher.js"></script>     
+</body>
+</html> 
